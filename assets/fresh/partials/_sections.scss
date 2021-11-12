@@ -42,11 +42,25 @@ Section Styles
     }
 }
 
+.title-wrapper-wide {
+    max-width: 850px;
+    margin: 0 auto;
+    .title, .subtitle {
+        font-family: 'Open Sans', sans-serif;
+
+    }
+    .subtitle {
+        &.is-muted {
+            color: $muted-grey;
+        }
+    }
+}
+
 //Divider
 .divider {
     height: 3px;
     border-radius: 50px;
-    background: $secondary;
+    background: $test-secondary;
     width: 60px;
     &.is-centered {
         margin: 0 auto;
